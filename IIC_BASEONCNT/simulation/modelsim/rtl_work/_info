@@ -1,0 +1,74 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/FpgaProgram/IIC/simulation/modelsim
+viic
+!s110 1610265470
+!i10b 1
+!s100 @^E6J8RjlmWW;8KC]H9^33
+Izb6:]lGolHlmk7>`WdYL51
+Z1 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1610265392
+8D:/FpgaProgram/IIC/iic.v
+FD:/FpgaProgram/IIC/iic.v
+L0 1
+Z2 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1610265469.964000
+!s107 D:/FpgaProgram/IIC/iic.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/FpgaProgram/IIC|D:/FpgaProgram/IIC/iic.v|
+!i113 1
+Z3 o-vlog01compat -work work
+Z4 !s92 -vlog01compat -work work +incdir+D:/FpgaProgram/IIC
+viic_vlg_tst
+!s110 1610263301
+!i10b 1
+!s100 HfzPLhQHz0_4d=C^[H__G0
+Id:Lm32^8K3aW^]kM`28kj1
+R1
+R0
+w1610263294
+8D:/FpgaProgram/IIC/simulation/modelsim/iic.vt
+FD:/FpgaProgram/IIC/simulation/modelsim/iic.vt
+L0 29
+R2
+r1
+!s85 0
+31
+!s108 1610263301.847000
+!s107 D:/FpgaProgram/IIC/simulation/modelsim/iic.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/FpgaProgram/IIC/simulation/modelsim|D:/FpgaProgram/IIC/simulation/modelsim/iic.vt|
+!i113 1
+R3
+!s92 -vlog01compat -work work +incdir+D:/FpgaProgram/IIC/simulation/modelsim
+vM24LC64
+!s110 1610254747
+!i10b 1
+!s100 =NPabgRQOlmbZ:dVilH_10
+IM@TY@_`<f7WU16HE:G7V31
+R1
+R0
+w1489126788
+8D:/FpgaProgram/IIC/24LC64.v
+FD:/FpgaProgram/IIC/24LC64.v
+L0 87
+R2
+r1
+!s85 0
+31
+!s108 1610254747.695000
+!s107 D:/FpgaProgram/IIC/24LC64.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/FpgaProgram/IIC|D:/FpgaProgram/IIC/24LC64.v|
+!i113 1
+R3
+R4
+n@m24@l@c64

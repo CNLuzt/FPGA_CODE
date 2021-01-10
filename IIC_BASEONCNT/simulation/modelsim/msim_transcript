@@ -1,0 +1,495 @@
+# Reading D:/altera15/modelsim_ase/tcl/vsim/pref.tcl
+# do iic_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying D:/altera15/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:/altera15/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+D:/FpgaProgram/IIC {D:/FpgaProgram/IIC/iic.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 12:59:07 on Jan 10,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/FpgaProgram/IIC" D:/FpgaProgram/IIC/iic.v 
+# -- Compiling module iic
+# 
+# Top level modules:
+# 	iic
+# End time: 12:59:07 on Jan 10,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/FpgaProgram/IIC/simulation/modelsim {D:/FpgaProgram/IIC/simulation/modelsim/iic.vt}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 12:59:07 on Jan 10,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/FpgaProgram/IIC/simulation/modelsim" D:/FpgaProgram/IIC/simulation/modelsim/iic.vt 
+# -- Compiling module iic_vlg_tst
+# 
+# Top level modules:
+# 	iic_vlg_tst
+# End time: 12:59:07 on Jan 10,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/FpgaProgram/IIC {D:/FpgaProgram/IIC/24LC64.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 12:59:07 on Jan 10,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/FpgaProgram/IIC" D:/FpgaProgram/IIC/24LC64.v 
+# -- Compiling module M24LC64
+# 
+# Top level modules:
+# 	M24LC64
+# End time: 12:59:07 on Jan 10,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  iic_vlg_tst
+# vsim -gui "+altera" -l msim_transcript -do "iic_run_msim_rtl_verilog.do" 
+# Start time: 12:59:09 on Jan 10,2021
+# Loading work.iic_vlg_tst
+# Loading work.iic
+# Loading work.M24LC64
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: CNL  Hostname: 御坂网络  ProcessID: 7872
+# 
+#           Attempting to use alternate WLF file "./wlftsbakvv".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftsbakvv
+# 
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Error: D:/FpgaProgram/IIC/24LC64.v(533): $width( posedge SDA &&& SCL:4210 ns, :4230 ns, 600 ns );
+#    Time: 4230 ns  Iteration: 2  Instance: /iic_vlg_tst/M24LC64
+# ** Error: D:/FpgaProgram/IIC/24LC64.v(533): $width( posedge SDA &&& SCL:374230 ns, :374250 ns, 600 ns );
+#    Time: 374250 ns  Iteration: 2  Instance: /iic_vlg_tst/M24LC64
+# ** Error: D:/FpgaProgram/IIC/24LC64.v(540): $hold( negedge SDA &&& TimingCheckEnable:376730 ns, negedge SCL:376730 ns, 600 ns );
+#    Time: 376730 ns  Iteration: 2  Instance: /iic_vlg_tst/M24LC64
+# ** Error: D:/FpgaProgram/IIC/24LC64.v(540): $hold( negedge SDA &&& TimingCheckEnable:381730 ns, negedge SCL:381730 ns, 600 ns );
+#    Time: 381730 ns  Iteration: 2  Instance: /iic_vlg_tst/M24LC64
+# ** Error: D:/FpgaProgram/IIC/24LC64.v(540): $hold( negedge SDA &&& TimingCheckEnable:386730 ns, negedge SCL:386730 ns, 600 ns );
+#    Time: 386730 ns  Iteration: 2  Instance: /iic_vlg_tst/M24LC64
+# ** Error: D:/FpgaProgram/IIC/24LC64.v(540): $hold( negedge SDA &&& TimingCheckEnable:389230 ns, negedge SCL:389230 ns, 600 ns );
+#    Time: 389230 ns  Iteration: 2  Instance: /iic_vlg_tst/M24LC64
+# ** Error: D:/FpgaProgram/IIC/24LC64.v(540): $hold( negedge SDA &&& TimingCheckEnable:391730 ns, negedge SCL:391730 ns, 600 ns );
+#    Time: 391730 ns  Iteration: 2  Instance: /iic_vlg_tst/M24LC64
+# ** Error: D:/FpgaProgram/IIC/24LC64.v(540): $hold( negedge SDA &&& TimingCheckEnable:394230 ns, negedge SCL:394230 ns, 600 ns );
+#    Time: 394230 ns  Iteration: 2  Instance: /iic_vlg_tst/M24LC64
+# ** Error: D:/FpgaProgram/IIC/24LC64.v(540): $hold( negedge SDA &&& TimingCheckEnable:396730 ns, negedge SCL:396730 ns, 600 ns );
+#    Time: 396730 ns  Iteration: 2  Instance: /iic_vlg_tst/M24LC64
+# ** Error: D:/FpgaProgram/IIC/24LC64.v(540): $hold( negedge SDA &&& TimingCheckEnable:399230 ns, negedge SCL:399230 ns, 600 ns );
+#    Time: 399230 ns  Iteration: 2  Instance: /iic_vlg_tst/M24LC64
+# ** Error: D:/FpgaProgram/IIC/24LC64.v(540): $hold( negedge SDA &&& TimingCheckEnable:401730 ns, negedge SCL:401730 ns, 600 ns );
+#    Time: 401730 ns  Iteration: 2  Instance: /iic_vlg_tst/M24LC64
+# ** Error: D:/FpgaProgram/IIC/24LC64.v(540): $hold( negedge SDA &&& TimingCheckEnable:404230 ns, negedge SCL:404230 ns, 600 ns );
+#    Time: 404230 ns  Iteration: 2  Instance: /iic_vlg_tst/M24LC64
+# ** Error: D:/FpgaProgram/IIC/24LC64.v(540): $hold( negedge SDA &&& TimingCheckEnable:406730 ns, negedge SCL:406730 ns, 600 ns );
+#    Time: 406730 ns  Iteration: 2  Instance: /iic_vlg_tst/M24LC64
+# ** Error: D:/FpgaProgram/IIC/24LC64.v(540): $hold( negedge SDA &&& TimingCheckEnable:409230 ns, negedge SCL:409230 ns, 600 ns );
+#    Time: 409230 ns  Iteration: 2  Instance: /iic_vlg_tst/M24LC64
+# ** Error: D:/FpgaProgram/IIC/24LC64.v(540): $hold( negedge SDA &&& TimingCheckEnable:411730 ns, negedge SCL:411730 ns, 600 ns );
+#    Time: 411730 ns  Iteration: 2  Instance: /iic_vlg_tst/M24LC64
+# ** Error: D:/FpgaProgram/IIC/24LC64.v(540): $hold( negedge SDA &&& TimingCheckEnable:414230 ns, negedge SCL:414230 ns, 600 ns );
+#    Time: 414230 ns  Iteration: 2  Instance: /iic_vlg_tst/M24LC64
+# ** Error: D:/FpgaProgram/IIC/24LC64.v(540): $hold( negedge SDA &&& TimingCheckEnable:416730 ns, negedge SCL:416730 ns, 600 ns );
+#    Time: 416730 ns  Iteration: 2  Instance: /iic_vlg_tst/M24LC64
+# ** Error: D:/FpgaProgram/IIC/24LC64.v(540): $hold( negedge SDA &&& TimingCheckEnable:419230 ns, negedge SCL:419230 ns, 600 ns );
+#    Time: 419230 ns  Iteration: 2  Instance: /iic_vlg_tst/M24LC64
+# ** Error: D:/FpgaProgram/IIC/24LC64.v(540): $hold( negedge SDA &&& TimingCheckEnable:421730 ns, negedge SCL:421730 ns, 600 ns );
+#    Time: 421730 ns  Iteration: 2  Instance: /iic_vlg_tst/M24LC64
+# ** Error: D:/FpgaProgram/IIC/24LC64.v(540): $hold( negedge SDA &&& TimingCheckEnable:424230 ns, negedge SCL:424230 ns, 600 ns );
+#    Time: 424230 ns  Iteration: 2  Instance: /iic_vlg_tst/M24LC64
+# ** Error: D:/FpgaProgram/IIC/24LC64.v(540): $hold( negedge SDA &&& TimingCheckEnable:426730 ns, negedge SCL:426730 ns, 600 ns );
+#    Time: 426730 ns  Iteration: 2  Instance: /iic_vlg_tst/M24LC64
+# ** Error: D:/FpgaProgram/IIC/24LC64.v(540): $hold( negedge SDA &&& TimingCheckEnable:429230 ns, negedge SCL:429230 ns, 600 ns );
+#    Time: 429230 ns  Iteration: 2  Instance: /iic_vlg_tst/M24LC64
+# ** Error: D:/FpgaProgram/IIC/24LC64.v(540): $hold( negedge SDA &&& TimingCheckEnable:431730 ns, negedge SCL:431730 ns, 600 ns );
+#    Time: 431730 ns  Iteration: 2  Instance: /iic_vlg_tst/M24LC64
+# ** Error: D:/FpgaProgram/IIC/24LC64.v(540): $hold( negedge SDA &&& TimingCheckEnable:434230 ns, negedge SCL:434230 ns, 600 ns );
+#    Time: 434230 ns  Iteration: 2  Instance: /iic_vlg_tst/M24LC64
+# ** Error: D:/FpgaProgram/IIC/24LC64.v(540): $hold( negedge SDA &&& TimingCheckEnable:436730 ns, negedge SCL:436730 ns, 600 ns );
+#    Time: 436730 ns  Iteration: 2  Instance: /iic_vlg_tst/M24LC64
+# ** Error: D:/FpgaProgram/IIC/24LC64.v(540): $hold( negedge SDA &&& TimingCheckEnable:439230 ns, negedge SCL:439230 ns, 600 ns );
+#    Time: 439230 ns  Iteration: 2  Instance: /iic_vlg_tst/M24LC64
+# ** Error: D:/FpgaProgram/IIC/24LC64.v(540): $hold( negedge SDA &&& TimingCheckEnable:441730 ns, negedge SCL:441730 ns, 600 ns );
+#    Time: 441730 ns  Iteration: 2  Instance: /iic_vlg_tst/M24LC64
+# ** Error: D:/FpgaProgram/IIC/24LC64.v(540): $hold( negedge SDA &&& TimingCheckEnable:444230 ns, negedge SCL:444230 ns, 600 ns );
+#    Time: 444230 ns  Iteration: 2  Instance: /iic_vlg_tst/M24LC64
+vlog -vlog01compat -work work +incdir+D:/FpgaProgram/IIC D:/FpgaProgram/IIC/iic.v
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 13:01:31 on Jan 10,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/FpgaProgram/IIC" D:/FpgaProgram/IIC/iic.v 
+# -- Compiling module iic
+# 
+# Top level modules:
+# 	iic
+# End time: 13:01:31 on Jan 10,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+add wave -position insertpoint  \
+sim:/iic_vlg_tst/i1/iic_en
+add wave -position insertpoint  \
+sim:/iic_vlg_tst/i1/iic_out
+add wave -position insertpoint  \
+sim:/iic_vlg_tst/i1/iic_in
+restart
+# Loading work.iic
+run -all
+# GetModuleFileName: 找不到指定的模块。
+# 
+# 
+add wave -position insertpoint  \
+sim:/iic_vlg_tst/M24LC64/WrDataByte
+restart
+run -all
+# GetModuleFileName: 找不到指定的模块。
+# 
+# 
+vlog -vlog01compat -work work +incdir+D:/FpgaProgram/IIC D:/FpgaProgram/IIC/iic.v
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 13:06:36 on Jan 10,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/FpgaProgram/IIC" D:/FpgaProgram/IIC/iic.v 
+# -- Compiling module iic
+# 
+# Top level modules:
+# 	iic
+# End time: 13:06:36 on Jan 10,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.iic
+run -all
+# GetModuleFileName: 找不到指定的模块。
+# 
+# 
+add wave -position insertpoint  \
+sim:/iic_vlg_tst/M24LC64/RdDataByte
+restart
+run -all
+# GetModuleFileName: 找不到指定的模块。
+# 
+# 
+vlog -vlog01compat -work work +incdir+D:/FpgaProgram/IIC D:/FpgaProgram/IIC/iic.v
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 14:19:03 on Jan 10,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/FpgaProgram/IIC" D:/FpgaProgram/IIC/iic.v 
+# -- Compiling module iic
+# 
+# Top level modules:
+# 	iic
+# End time: 14:19:03 on Jan 10,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.iic
+run -all
+# GetModuleFileName: 找不到指定的模块。
+# 
+# 
+# WARNING: No extended dataflow license exists
+restart
+run -all
+# GetModuleFileName: 找不到指定的模块。
+# 
+# 
+vlog -vlog01compat -work work +incdir+D:/FpgaProgram/IIC D:/FpgaProgram/IIC/iic.v
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 14:26:03 on Jan 10,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/FpgaProgram/IIC" D:/FpgaProgram/IIC/iic.v 
+# -- Compiling module iic
+# 
+# Top level modules:
+# 	iic
+# End time: 14:26:03 on Jan 10,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.iic
+run -all
+# GetModuleFileName: 找不到指定的模块。
+# 
+# 
+vlog -vlog01compat -work work +incdir+D:/FpgaProgram/IIC D:/FpgaProgram/IIC/iic.v
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 14:34:18 on Jan 10,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/FpgaProgram/IIC" D:/FpgaProgram/IIC/iic.v 
+# -- Compiling module iic
+# 
+# Top level modules:
+# 	iic
+# End time: 14:34:18 on Jan 10,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.iic
+run -all
+# GetModuleFileName: 找不到指定的模块。
+# 
+# 
+vlog -vlog01compat -work work +incdir+D:/FpgaProgram/IIC D:/FpgaProgram/IIC/iic.v
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 14:38:13 on Jan 10,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/FpgaProgram/IIC" D:/FpgaProgram/IIC/iic.v 
+# -- Compiling module iic
+# 
+# Top level modules:
+# 	iic
+# End time: 14:38:14 on Jan 10,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+restart
+# Loading work.iic
+run -all
+# GetModuleFileName: 找不到指定的模块。
+# 
+# 
+vlog -vlog01compat -work work +incdir+D:/FpgaProgram/IIC D:/FpgaProgram/IIC/iic.v
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 14:41:25 on Jan 10,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/FpgaProgram/IIC" D:/FpgaProgram/IIC/iic.v 
+# -- Compiling module iic
+# 
+# Top level modules:
+# 	iic
+# End time: 14:41:25 on Jan 10,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.iic
+run -all
+# GetModuleFileName: 找不到指定的模块。
+# 
+# 
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint  \
+sim:/iic_vlg_tst/i1/rd_flag
+restart
+run -all
+# GetModuleFileName: 找不到指定的模块。
+# 
+# 
+add wave -position insertpoint  \
+sim:/iic_vlg_tst/i1/cnt_sclk
+add wave -position insertpoint  \
+sim:/iic_vlg_tst/i1/cnt_byte
+add wave -position insertpoint  \
+sim:/iic_vlg_tst/i1/add_cnt_sclk
+add wave -position insertpoint  \
+sim:/iic_vlg_tst/i1/add_cnt_byte
+restart
+run -all
+# GetModuleFileName: 找不到指定的模块。
+# 
+# 
+restart
+run -all
+# GetModuleFileName: 找不到指定的模块。
+# 
+# 
+# Can't move a locked cursor.
+# Can't move a locked cursor.
+vlog -vlog01compat -work work +incdir+D:/FpgaProgram/IIC D:/FpgaProgram/IIC/iic.v
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:03:06 on Jan 10,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/FpgaProgram/IIC" D:/FpgaProgram/IIC/iic.v 
+# -- Compiling module iic
+# 
+# Top level modules:
+# 	iic
+# End time: 15:03:06 on Jan 10,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.iic
+run -all
+# GetModuleFileName: 找不到指定的模块。
+# 
+# 
+restart
+vlog -vlog01compat -work work +incdir+D:/FpgaProgram/IIC D:/FpgaProgram/IIC/iic.v
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:06:23 on Jan 10,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/FpgaProgram/IIC" D:/FpgaProgram/IIC/iic.v 
+# -- Compiling module iic
+# 
+# Top level modules:
+# 	iic
+# End time: 15:06:23 on Jan 10,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.iic
+run -all
+# GetModuleFileName: 找不到指定的模块。
+# 
+# 
+vlog -vlog01compat -work work +incdir+D:/FpgaProgram/IIC/simulation/modelsim D:/FpgaProgram/IIC/simulation/modelsim/iic.vt
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:08:55 on Jan 10,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/FpgaProgram/IIC/simulation/modelsim" D:/FpgaProgram/IIC/simulation/modelsim/iic.vt 
+# -- Compiling module iic_vlg_tst
+# 
+# Top level modules:
+# 	iic_vlg_tst
+# End time: 15:08:55 on Jan 10,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.iic_vlg_tst
+run -all
+# GetModuleFileName: 找不到指定的模块。
+# 
+# 
+restart
+run -all
+# GetModuleFileName: 找不到指定的模块。
+# 
+# 
+vlog -vlog01compat -work work +incdir+D:/FpgaProgram/IIC D:/FpgaProgram/IIC/iic.v
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:13:20 on Jan 10,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/FpgaProgram/IIC" D:/FpgaProgram/IIC/iic.v 
+# -- Compiling module iic
+# 
+# Top level modules:
+# 	iic
+# End time: 15:13:20 on Jan 10,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.iic
+run -all
+# GetModuleFileName: 找不到指定的模块。
+# 
+# 
+# WARNING: No extended dataflow license exists
+vlog -vlog01compat -work work +incdir+D:/FpgaProgram/IIC D:/FpgaProgram/IIC/iic.v
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:19:37 on Jan 10,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/FpgaProgram/IIC" D:/FpgaProgram/IIC/iic.v 
+# -- Compiling module iic
+# 
+# Top level modules:
+# 	iic
+# End time: 15:19:37 on Jan 10,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/FpgaProgram/IIC/simulation/modelsim D:/FpgaProgram/IIC/simulation/modelsim/iic.vt
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:19:40 on Jan 10,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/FpgaProgram/IIC/simulation/modelsim" D:/FpgaProgram/IIC/simulation/modelsim/iic.vt 
+# -- Compiling module iic_vlg_tst
+# 
+# Top level modules:
+# 	iic_vlg_tst
+# End time: 15:19:40 on Jan 10,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.iic_vlg_tst
+# Loading work.iic
+run -all
+# GetModuleFileName: 找不到指定的模块。
+# 
+# 
+vlog -vlog01compat -work work +incdir+D:/FpgaProgram/IIC/simulation/modelsim D:/FpgaProgram/IIC/simulation/modelsim/iic.vt
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:21:41 on Jan 10,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/FpgaProgram/IIC/simulation/modelsim" D:/FpgaProgram/IIC/simulation/modelsim/iic.vt 
+# -- Compiling module iic_vlg_tst
+# 
+# Top level modules:
+# 	iic_vlg_tst
+# End time: 15:21:41 on Jan 10,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.iic_vlg_tst
+run -all
+# GetModuleFileName: 找不到指定的模块。
+# 
+# 
+restart
+run -all
+# GetModuleFileName: 找不到指定的模块。
+# 
+# 
+vlog -vlog01compat -work work +incdir+D:/FpgaProgram/IIC D:/FpgaProgram/IIC/iic.v
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:40:31 on Jan 10,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/FpgaProgram/IIC" D:/FpgaProgram/IIC/iic.v 
+# -- Compiling module iic
+# 
+# Top level modules:
+# 	iic
+# End time: 15:40:32 on Jan 10,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+restart
+# Loading work.iic
+run -all
+# GetModuleFileName: 找不到指定的模块。
+# 
+# 
+restart
+vlog -vlog01compat -work work +incdir+D:/FpgaProgram/IIC D:/FpgaProgram/IIC/iic.v
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:43:53 on Jan 10,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/FpgaProgram/IIC" D:/FpgaProgram/IIC/iic.v 
+# -- Compiling module iic
+# 
+# Top level modules:
+# 	iic
+# End time: 15:43:54 on Jan 10,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+run -all
+# GetModuleFileName: 找不到指定的模块。
+# 
+# 
+vlog -vlog01compat -work work +incdir+D:/FpgaProgram/IIC D:/FpgaProgram/IIC/iic.v
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:51:13 on Jan 10,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/FpgaProgram/IIC" D:/FpgaProgram/IIC/iic.v 
+# -- Compiling module iic
+# 
+# Top level modules:
+# 	iic
+# End time: 15:51:13 on Jan 10,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.iic
+run -all
+# GetModuleFileName: 找不到指定的模块。
+# 
+# 
+# ** Error: D:/FpgaProgram/IIC/24LC64.v(540): $hold( negedge SDA &&& TimingCheckEnable:491730 ns, negedge SCL:491730 ns, 600 ns );
+#    Time: 491730 ns  Iteration: 2  Instance: /iic_vlg_tst/M24LC64
+vlog -vlog01compat -work work +incdir+D:/FpgaProgram/IIC D:/FpgaProgram/IIC/iic.v
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:55:05 on Jan 10,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/FpgaProgram/IIC" D:/FpgaProgram/IIC/iic.v 
+# -- Compiling module iic
+# 
+# Top level modules:
+# 	iic
+# End time: 15:55:05 on Jan 10,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.iic
+run -all
+# GetModuleFileName: 找不到指定的模块。
+# 
+# 
+# ** Error: D:/FpgaProgram/IIC/24LC64.v(540): $hold( negedge SDA &&& TimingCheckEnable:491730 ns, negedge SCL:491730 ns, 600 ns );
+#    Time: 491730 ns  Iteration: 2  Instance: /iic_vlg_tst/M24LC64
+vlog -vlog01compat -work work +incdir+D:/FpgaProgram/IIC D:/FpgaProgram/IIC/iic.v
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 15:57:49 on Jan 10,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/FpgaProgram/IIC" D:/FpgaProgram/IIC/iic.v 
+# -- Compiling module iic
+# 
+# Top level modules:
+# 	iic
+# End time: 15:57:50 on Jan 10,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+restart
+# Loading work.iic
+run -all
+# GetModuleFileName: 找不到指定的模块。
+# 
+# 
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/FpgaProgram/IIC/simulation/modelsim/wave.do
+# End time: 20:21:58 on Jan 10,2021, Elapsed time: 7:22:49
+# Errors: 32, Warnings: 5
