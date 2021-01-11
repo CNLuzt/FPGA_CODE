@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at uart_rx.v(30): always construct contains both blocking and non-blocking assignments
+Info (10281): Verilog HDL Declaration information at UART_PORT.v(16): object "uart_tx" differs only in case from object "UART_TX" in the same scope

@@ -1,0 +1,151 @@
+# Reading D:/altera15/modelsim_ase/tcl/vsim/pref.tcl
+# do UART_PORT_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying D:/altera15/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:/altera15/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+D:/FpgaProgram/UART_PORT {D:/FpgaProgram/UART_PORT/uart_tx.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:11:28 on Jan 07,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/FpgaProgram/UART_PORT" D:/FpgaProgram/UART_PORT/uart_tx.v 
+# -- Compiling module uart_tx
+# 
+# Top level modules:
+# 	uart_tx
+# End time: 18:11:28 on Jan 07,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/FpgaProgram/UART_PORT {D:/FpgaProgram/UART_PORT/uart_rx.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:11:28 on Jan 07,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/FpgaProgram/UART_PORT" D:/FpgaProgram/UART_PORT/uart_rx.v 
+# -- Compiling module uart_rx
+# 
+# Top level modules:
+# 	uart_rx
+# End time: 18:11:28 on Jan 07,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/FpgaProgram/UART_PORT {D:/FpgaProgram/UART_PORT/UART_PORT.v}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:11:28 on Jan 07,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/FpgaProgram/UART_PORT" D:/FpgaProgram/UART_PORT/UART_PORT.v 
+# -- Compiling module UART_PORT
+# 
+# Top level modules:
+# 	UART_PORT
+# End time: 18:11:28 on Jan 07,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/FpgaProgram/UART_PORT/simulation/modelsim {D:/FpgaProgram/UART_PORT/simulation/modelsim/UART_PORT.vt}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:11:28 on Jan 07,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/FpgaProgram/UART_PORT/simulation/modelsim" D:/FpgaProgram/UART_PORT/simulation/modelsim/UART_PORT.vt 
+# -- Compiling module UART_PORT_vlg_tst
+# 
+# Top level modules:
+# 	UART_PORT_vlg_tst
+# End time: 18:11:28 on Jan 07,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  UART_PORT_vlg_tst
+# vsim -gui "+altera" -l msim_transcript -do "UART_PORT_run_msim_rtl_verilog.do" 
+# Start time: 18:11:28 on Jan 07,2021
+# Loading work.UART_PORT_vlg_tst
+# Loading work.UART_PORT
+# Loading work.uart_rx
+# Loading work.uart_tx
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 1 sec
+# Running testbench
+vlog -reportprogress 300 -work work D:/FpgaProgram/UART_PORT/simulation/modelsim/UART_PORT.vt
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:11:45 on Jan 07,2021
+# vlog -reportprogress 300 -work work D:/FpgaProgram/UART_PORT/simulation/modelsim/UART_PORT.vt 
+# -- Compiling module UART_PORT_vlg_tst
+# 
+# Top level modules:
+# 	UART_PORT_vlg_tst
+# End time: 18:11:45 on Jan 07,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/FpgaProgram/UART_PORT/simulation/modelsim/UART_PORT.vt
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:11:47 on Jan 07,2021
+# vlog -reportprogress 300 -work work D:/FpgaProgram/UART_PORT/simulation/modelsim/UART_PORT.vt 
+# -- Compiling module UART_PORT_vlg_tst
+# 
+# Top level modules:
+# 	UART_PORT_vlg_tst
+# End time: 18:11:47 on Jan 07,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/FpgaProgram/UART_PORT/simulation/modelsim/UART_PORT.vt
+vlog -reportprogress 300 -work work D:/FpgaProgram/UART_PORT/simulation/modelsim/UART_PORT.vt
+vlog -reportprogress 300 -work work D:/FpgaProgram/UART_PORT/simulation/modelsim/UART_PORT.vt
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:11:48 on Jan 07,2021
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# vlog -reportprogress 300 -work work D:/FpgaProgram/UART_PORT/simulation/modelsim/UART_PORT.vt 
+# -- Compiling module UART_PORT_vlg_tst
+# Start time: 18:11:48 on Jan 07,2021
+# 
+# vlog -reportprogress 300 -work work D:/FpgaProgram/UART_PORT/simulation/modelsim/UART_PORT.vt 
+# -- Compiling module UART_PORT_vlg_tst
+# Top level modules:
+# 
+# 	UART_PORT_vlg_tst
+# Top level modules:
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# End time: 18:11:48 on Jan 07,2021, Elapsed time: 0:00:00
+# 	UART_PORT_vlg_tst
+# End time: 18:11:48 on Jan 07,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Errors: 0, Warnings: 0
+# Start time: 18:11:48 on Jan 07,2021
+# vlog -reportprogress 300 -work work D:/FpgaProgram/UART_PORT/simulation/modelsim/UART_PORT.vt 
+# -- Compiling module UART_PORT_vlg_tst
+# 
+# Top level modules:
+# 	UART_PORT_vlg_tst
+# End time: 18:11:48 on Jan 07,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/FpgaProgram/UART_PORT/simulation/modelsim/UART_PORT.vt
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:11:48 on Jan 07,2021
+# vlog -reportprogress 300 -work work D:/FpgaProgram/UART_PORT/simulation/modelsim/UART_PORT.vt 
+# -- Compiling module UART_PORT_vlg_tst
+# 
+# Top level modules:
+# 	UART_PORT_vlg_tst
+# End time: 18:11:48 on Jan 07,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/FpgaProgram/UART_PORT/simulation/modelsim/UART_PORT.vt
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:11:49 on Jan 07,2021
+# vlog -reportprogress 300 -work work D:/FpgaProgram/UART_PORT/simulation/modelsim/UART_PORT.vt 
+# -- Compiling module UART_PORT_vlg_tst
+# 
+# Top level modules:
+# 	UART_PORT_vlg_tst
+# End time: 18:11:49 on Jan 07,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/FpgaProgram/UART_PORT/simulation/modelsim/UART_PORT.vt
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 18:11:50 on Jan 07,2021
+# vlog -reportprogress 300 -work work D:/FpgaProgram/UART_PORT/simulation/modelsim/UART_PORT.vt 
+# -- Compiling module UART_PORT_vlg_tst
+# 
+# Top level modules:
+# 	UART_PORT_vlg_tst
+# End time: 18:11:50 on Jan 07,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
